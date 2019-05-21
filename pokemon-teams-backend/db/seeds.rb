@@ -7,10 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 require 'securerandom'
+require 'activerecord-reset-pk-sequence'
 
 
 Trainer.delete_all
 Pokemon.delete_all
+
+Trainer.reset_pk_sequence
+Pokemon.reset_pk_sequence
 
 trainers_name = [
   'Prince',
