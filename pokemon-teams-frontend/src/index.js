@@ -75,6 +75,7 @@ function createElements(trainer){
                 addPokemon();
             }
             else{
+                // alert.preventDefault();
                 alert('TOOOOOO MUCHH POKE')
             }
             //console.log(trainerElement.childNodes.length);
@@ -119,7 +120,6 @@ function addPokemonToList(pokemon){
         currentPokemon = pokemon.id
                 //call delete method
         trainerElement = li;
-        
         console.log(trainerElement);
         release();
         })
